@@ -676,6 +676,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -725,6 +730,10 @@ video {
   height: 66.666667%;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -747,6 +756,18 @@ video {
 
 .basis-3\/5 {
   flex-basis: 60%;
+}
+
+.basis-full {
+  flex-basis: 100%;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.basis-1\/5 {
+  flex-basis: 20%;
 }
 
 .list-disc {
@@ -825,14 +846,19 @@ video {
   background-color: rgba(var(--ctp-base), var(--tw-bg-opacity));
 }
 
-.bg-ctp-crust {
+.bg-ctp-blue {
   --tw-bg-opacity: 1;
-  background-color: rgba(var(--ctp-crust), var(--tw-bg-opacity));
+  background-color: rgba(var(--ctp-blue), var(--tw-bg-opacity));
 }
 
 .bg-ctp-mantle {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--ctp-mantle), var(--tw-bg-opacity));
+}
+
+.bg-ctp-crust {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ctp-crust), var(--tw-bg-opacity));
 }
 
 .bg-evening-sky {
@@ -990,16 +1016,20 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
-  .md\:flex-1 {
-    flex: 1 1 0%;
-  }
-
   .md\:basis-2\/5 {
     flex-basis: 40%;
+  }
+
+  .md\:basis-0 {
+    flex-basis: 0px;
   }
 
   .md\:flex-row {
@@ -1008,6 +1038,10 @@ video {
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .md\:items-start {

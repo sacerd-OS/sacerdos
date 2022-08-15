@@ -681,6 +681,11 @@ video {
   margin-bottom: auto;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -725,6 +730,10 @@ video {
   height: 66.666667%;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -747,6 +756,10 @@ video {
 
 .basis-3\/5 {
   flex-basis: 60%;
+}
+
+.basis-full {
+  flex-basis: 100%;
 }
 
 .list-disc {
@@ -829,6 +842,11 @@ video {
 .bg-ctp-mantle {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--ctp-mantle), var(--tw-bg-opacity));
+}
+
+.bg-ctp-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ctp-blue), var(--tw-bg-opacity));
 }
 
 .bg-evening-sky {
@@ -992,6 +1010,10 @@ video {
 
   .md\:basis-2\/5 {
     flex-basis: 40%;
+  }
+
+  .md\:basis-0 {
+    flex-basis: 0px;
   }
 
   .md\:flex-row {
