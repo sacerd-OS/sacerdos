@@ -14,16 +14,16 @@
         <div class = "justify-around sticky max-w-6xl w-full top-0 border-x border-ctp-mauve">
             <nav class = "bg-ctp-crust w-full sticky top-0" id = "header">
                 <ul class="flex justify-around py-4">
-                    <li class="mr-2">
+                    <li class="mr-2 px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
                         <a class="text-center block text-ctp-rosewater py-2 pr-4" href="#"><i class="fa-solid fa-house-chimney mx-2"></i> Home</a>
                     </li>
-                    <li class="mr-2">
+                    <li class="mr-2 px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
                     <a class="text-center block text-ctp-rosewater py-2 px-4" href="#projects"> <i class="fa-solid fa-file-code mx-2"></i> Projects</a>
                     </li>
-                    <li class="">
+                    <li class="mr-2 px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
                         <a class="text-center block text-ctp-rosewater py-2 px-4" href="#"> <i class="fa-solid fa-pen mx-2"></i> Resumé</a>
                     </li>
-                    <li class = "">
+                    <li class = "px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
                         <button onclick="changePalette()" id = "theme" class = "text-center block text-ctp-rosewater py-2 px-4"><i class="fa-solid fa-sun"></i>  Theme</button>
                     </li>
                 </ul>
@@ -34,7 +34,7 @@
                 <div class = "basis-1/4">
                     <img src = "./src/media/august.jpg" class = "rounded-full h-2/3 mx-auto mb-4 outline outline-2 outline-ctp-lavender"> <!-- Who's this weird cat??? -->
                 </div>
-                <div class = "basis-3/5">
+                <div class = "basis-3/5 mb-2">
                     <h1 class = "font-bold text-ctp-text text-3xl mb-2 text-center md:text-left">Hi, I'm <span class = "text-ctp-lavender">August</span>!</h1>
                     <p class = "text-ctp-subtext0 mb-4 pl-4">I'm currently a sophomore at UMass Amherst, seeking a dual degree in Computer Science (B.S.) and Classical Languages (B.A.). Although I have a hobby in front-end web development, my career interest ultimately lies in systems programming, particularly operating systems.</p>
                     <p class = "text-ctp-subtext0 pl-4">When I'm not coding or grappling with the intracies of Augustan era poetry, I spend my free time playing old video games, trying to get stuff work on Linux, and listening to obscure music. Je parle un peu de français aussi.</p>
@@ -47,19 +47,19 @@
                 <h2 class = "text-ctp-text text-center font-bold mb-10 text-2xl">Projects</h2>
                 <div class = "container md:flex md:flex-row md:items-start justify-around flex-wrap">
                     <div class = "md:basis-2/5 bg-ctp-crust px-3 py-2 my-5 rounded-lg outline outline-1 outline-ctp-maroon">
-                        <h3 class = "text-ctp-subtext1 font-bold">sacerdOS Website</h3>
+                        <h3 class = "text-ctp-subtext1 font-bold"><a href = "https://github.com/sacerd-OS/sacerdos" class = "transition-colors ease-in-out hover:text-ctp-maroon duration-700">sacerdOS Website</a></h3>
                         <h4 class = "italic text-ctp-overlay2 mb-2">August 2022 - HTML, TailwindCSS</h4>
-                       <p class = "text-ctp-subtext0">This is my portfolio website, which was built using TailwindCSS. The name is a pun on the Latin word <span class = "italic">sacerdos</span> meaning "priest" and the acronym OS. The website uses the <a href="https://github.com/catppuccin" class = "text-ctp-rosewater">Catppuccin</a> color palette.</p>
+                       <p class = "text-ctp-subtext0">This is my portfolio website, which was built using TailwindCSS. The name is a pun on the Latin word <span class = "italic">sacerdos</span> meaning "priest" and the acronym OS. The website uses the <a href="https://github.com/catppuccin" class = "transition-colors ease-in-out hover:text-ctp-peach duration-700 text-ctp-rosewater">Catppuccin</a> color palette.</p>
                     </div> <!--Website - HTML, tailwindCSS-->
 
                     <div class = "md:basis-2/5 bg-ctp-crust px-3 py-2 my-5 rounded-lg outline outline-1 outline-ctp-peach">
-                        <h3 class = "text-ctp-subtext1 font-bold"><a href = "https://github.com/catfoodkc/caetviewer">CaetViewer</a></h3>
+                        <h3 class = "text-ctp-subtext1 font-bold"><a href = "https://github.com/catfoodkc/caetviewer" class = "transition-colors ease-in-out hover:text-ctp-peach duration-700">CaetViewer</a></h3>
                         <h4 class = "italic text-ctp-overlay2 mb-2">February 2022 - Java</h4>
                         <p class = "text-ctp-subtext0">CaetViewer is a command-line based text file e-reader. This project, originally written in Java over the course of a day, was originally made for the Hack(H)er413 Hackathon, but not submitted on time.</p>
                     </div> <!--CaetViewer - Java-->
 
                     <div class = "md:basis-2/5 bg-ctp-crust px-3 py-2 my-5 rounded-lg outline outline-1 outline-ctp-yellow">
-                        <h3 class = "text-ctp-subtext1 font-bold"><a href = "https://github.com/catfoodkc/passgen">PassGen</a></h3>
+                        <h3 class = "text-ctp-subtext1 font-bold"><a href = "https://github.com/catfoodkc/passgen" class = "transition-colors ease-in-out hover:text-ctp-yellow duration-700">PassGen</a></h3>
                         <h4 class = "italic text-ctp-overlay2 mb-2">March 2021 - Python, Tkinter</h4>
                         <p class = "text-ctp-subtext0">A simple password generator made to experiment with basic Python features and the Tkinter toolkit.</p>
                     </div> <!--PassGen - Python, Tkinter-->
@@ -146,8 +146,8 @@
             <div id = "footer" class = "bg-ctp-crust flex flex-col justify-center max-w-6xl w-full py-4 border-x border-ctp-mauve"> <!-- flex col in case further content is added -->
                 <div class = "flex flex-row justify-center">
                     <h3 class = "text-ctp-subtext1 text-center my-auto text-xl">Connect with me! </h3>
-                    <a href = "https://github.com/catfoodkc"><i class="fa-brands fa-github text-ctp-subtext1 text-4xl px-5"></i></a>
-                    <a href="https://www.linkedin.com/in/augustahuber/"><i class="fa-brands fa-linkedin text-ctp-subtext1 text-4xl"></i></a>
+                    <a href = "https://github.com/catfoodkc"><i class="fa-brands fa-github text-ctp-subtext1 text-4xl px-5 transition-colors ease-in-out hover:text-ctp-overlay2 duration-700"></i></a>
+                    <a href="https://www.linkedin.com/in/augustahuber/"><i class="fa-brands fa-linkedin text-ctp-subtext1 text-4xl transition-colors ease-in-out hover:text-ctp-overlay2 duration-700"></i></a>
                 </div>
             </div>
         </div>
