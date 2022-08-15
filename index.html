@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/styles.css">
     <script src="https://kit.fontawesome.com/3d565e5eab.js" crossorigin="anonymous"></script>
+    <script src = "./src/palette.js"></script>
     <link rel="icon" type="image/x-icon" href="./media/favicon.svg">
     <title>sacerdOS</title>
 </head>
-<body class = "bg-ctp-base bg-evening-sky">
-    <div class = "flex flex-col justify-between items-center">
-        <div class = "justify-between sticky max-w-6xl w-full top-0 border-x border-ctp-mauve">
+<body class = "bg-ctp-base bg-evening-sky" id = "body">
+    <div class = "flex flex-col justify-around items-center">
+        <div class = "justify-around sticky max-w-6xl w-full top-0 border-x border-ctp-mauve">
             <nav class = "bg-ctp-crust w-full sticky top-0" id = "header">
                 <ul class="flex justify-around py-4">
-                    <li class="md:flex-1 mr-2">
+                    <li class="mr-2">
                         <a class="text-center block text-ctp-rosewater py-2 pr-4" href="#"><i class="fa-solid fa-house-chimney mx-2"></i> Home</a>
                     </li>
-                    <li class="md:flex-1 mr-2">
+                    <li class="mr-2">
                     <a class="text-center block text-ctp-rosewater py-2 px-4" href="#projects"> <i class="fa-solid fa-file-code mx-2"></i> Projects</a>
                     </li>
-                    <li class="md:flex-1">
+                    <li class="">
                         <a class="text-center block text-ctp-rosewater py-2 px-4" href="#"> <i class="fa-solid fa-pen mx-2"></i> Resumé</a>
+                    </li>
+                    <li class = "">
+                        <button onclick="changePalette()" id = "theme" class = "text-center block text-ctp-rosewater py-2 px-4"><i class="fa-solid fa-sun"></i>  Theme</button>
                     </li>
                 </ul>
         </nav>
@@ -28,7 +32,7 @@
         <main class = "bg-ctp-mantle max-w-6xl w-full px-8 h-full border-x border-ctp-mauve">
             <div id = "about" class = "container mt-10 md:flex md:flex-row-reverse md:justify-around">
                 <div class = "basis-1/4">
-                    <img src = "./media/august.jpg" class = "rounded-full h-2/3 mx-auto mb-4 outline outline-2 outline-ctp-lavender"> <!-- Who's this weird cat??? -->
+                    <img src = "./src/media/august.jpg" class = "rounded-full h-2/3 mx-auto mb-4 outline outline-2 outline-ctp-lavender"> <!-- Who's this weird cat??? -->
                 </div>
                 <div class = "basis-3/5">
                     <h1 class = "font-bold text-ctp-text text-3xl mb-2 text-center md:text-left">Hi, I'm <span class = "text-ctp-lavender">August</span>!</h1>
@@ -117,22 +121,22 @@
                 <div class = "lg:flex lg:flex-row lg:justify-around mx-auto mb-5 lg:mx-20 max-w-lg lg:max-w-none">
                     <div class = "lg:basis-1/2 mx-auto lg:mr-10">
                         <h3 class = "text-ctp-subtext1 font-bold mb-2 text-center lg:text-left">Stonewall Center, Student Staff</h3>
-                        <img src="./media/stonewall.png" class = "lg:hidden rounded-tr-xl rounded-bl-xl outline outline-1 outline-ctp-sapphire mb-4">
+                        <img src="./src/media/stonewall.png" class = "lg:hidden rounded-tr-xl rounded-bl-xl outline outline-1 outline-ctp-sapphire mb-4">
                         <h4 class = "italic text-ctp-overlay2 mb-2">October 2021 - Present</h4>
                         <p class = "text-ctp-subtext0 mb-5">I am currently a student staff member at the Stonewall Center at the University of Massachusetts, Amherst. I am charge of building LGBTQ+ community on campus by holding events targeted toward queer students on campus, particularly transgender students and other vulnerable groups. When not planning events or helping the queer community on campus, I also manage social media for the Stonewall Center, lead staff meetings, and assist in keeping records.</p>
                     </div>
                     <div class = "lg:basis-1/3">
-                        <img src="./media/stonewall.png" class = "hidden lg:block rounded-tr-xl rounded-bl-xl outline outline-1 outline-ctp-sapphire">
+                        <img src="./src/media/stonewall.png" class = "hidden lg:block rounded-tr-xl rounded-bl-xl outline outline-1 outline-ctp-sapphire">
                     </div>
                 </div> <!--Stonewall Center-->
 
                 <div class = "lg:flex lg:flex-row lg:justify-around mx-auto mb-5 lg:mx-20 max-w-lg lg:max-w-none">
                     <div class = "lg:basis-1/3">
-                        <img src = "media/careone.png" class = "hidden lg:block rounded-tl-xl rounded-br-xl outline outline-1 outline-ctp-red">                        
+                        <img src = "./src/media/careone.png" class = "hidden lg:block rounded-tl-xl rounded-br-xl outline outline-1 outline-ctp-red">                        
                     </div>
                     <div class = "lg:basis-1/2 mx-auto lg:ml-10">
                         <h3 class = "text-ctp-subtext1 font-bold text-center lg:text-left mb-4">CareOne at Lexington, Receptionist</h3>
-                        <img src="./media/careone.png" class = "lg:hidden rounded-tr-xl rounded-bl-xl outline outline-1 outline-ctp-red mb-4">
+                        <img src="./src/media/careone.png" class = "lg:hidden rounded-tr-xl rounded-bl-xl outline outline-1 outline-ctp-red mb-4">
                         <h4 class = "italic text-ctp-overlay2 mb-2">May 2022 - August 2022</h4>
                         <p class = "text-ctp-subtext0">As a summer receptionist at CareOne, I have created a welcoming and warm environment for visitors at the skilled nursing center as the telephone and front desk receptionist. I have also evaluated incoming calls and directed them to the appropriate recipient. Other duties include health screening and maintenance of COVID-19 screening records.</p>
                     </div>
