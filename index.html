@@ -9,27 +9,27 @@
     <link rel="icon" type="image/x-icon" href="./src/media/favicon.svg">
     <title>sacerdOS</title>
 </head>
-<body class = "bg-ctp-base bg-evening-sky" id = "body">
+<body class = "bg-ctp-base" id = "body">
+    <nav class = "bg-ctp-crust w-full sticky top-0" id = "header">
+        <ul class="flex justify-around py-4 max-w-3xl mx-auto">
+            <li class="mr-2 px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
+                <a class="text-center block text-ctp-rosewater py-2 pr-4" href="#"><i class="fa-solid fa-house-chimney mx-2"></i> Home</a>
+            </li>
+            <li class="mr-2 px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
+            <a class="text-center block text-ctp-rosewater py-2 px-4" href="#projects"> <i class="fa-solid fa-file-code mx-2"></i> Projects</a>
+            </li>
+            <li class="mr-2 px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
+                <a class="text-center block text-ctp-rosewater py-2 px-4" href="#"> <i class="fa-solid fa-pen mx-2"></i> Resumé</a>
+            </li>
+            <li class = "px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
+                <button onclick="changePalette()" id = "theme" class = "text-center block text-ctp-rosewater py-2 px-4"><i class="fa-solid fa-sun"></i>  Theme</button>
+            </li>
+        </ul>
+    </nav>
     <div class = "flex flex-col justify-around items-center">
         <div class = "justify-around sticky max-w-6xl w-full top-0 border-x border-ctp-mauve">
-            <nav class = "bg-ctp-crust w-full sticky top-0" id = "header">
-                <ul class="flex justify-around py-4">
-                    <li class="mr-2 px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
-                        <a class="text-center block text-ctp-rosewater py-2 pr-4" href="#"><i class="fa-solid fa-house-chimney mx-2"></i> Home</a>
-                    </li>
-                    <li class="mr-2 px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
-                    <a class="text-center block text-ctp-rosewater py-2 px-4" href="#projects"> <i class="fa-solid fa-file-code mx-2"></i> Projects</a>
-                    </li>
-                    <li class="mr-2 px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
-                        <a class="text-center block text-ctp-rosewater py-2 px-4" href="#"> <i class="fa-solid fa-pen mx-2"></i> Resumé</a>
-                    </li>
-                    <li class = "px-4 py-1 rounded-lg transition-colors ease-in-out hover:bg-ctp-base duration-500">
-                        <button onclick="changePalette()" id = "theme" class = "text-center block text-ctp-rosewater py-2 px-4"><i class="fa-solid fa-sun"></i>  Theme</button>
-                    </li>
-                </ul>
-        </nav>
-    </div>
-        <main class = "bg-ctp-mantle max-w-6xl w-full px-8 h-full border-x border-ctp-mauve">
+        </div>
+        <main class = "bg-ctp-base max-w-6xl w-full px-8 h-full border-x border-ctp-mauve">
             <div id = "about" class = "container mt-10 md:flex md:flex-row-reverse md:justify-around">
                 <div class = "basis-1/4">
                     <img src = "./src/media/august.jpg" class = "rounded-full h-2/3 mx-auto mb-4 outline outline-2 outline-ctp-lavender"> <!-- Who's this weird cat??? -->
@@ -80,10 +80,10 @@
                     <div class = "mb-4">
                         <h3 class = "font-bold text-ctp-sky text-lg mb-2">Programming Languages</h3>
                         <ul class = "text-ctp-subtext0 list-disc"> 
-                            <li>HTML / CSS</li>
+                            <li>C</li>
                             <li>Java</li>
                             <li>Python</li>
-                            <li>C</li>
+                            <li>HTML / CSS</li>
                         </ul>
                     </div>
                     <div class = "mb-4">
@@ -108,7 +108,7 @@
                         <ul class = "text-ctp-subtext0 list-disc">
                             <li>English (Native)</li>
                             <li>French (B1)</li>
-                            <li>Latin</li>
+                            <li>Latin & Attic Greek</li>
                         </ul>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                 </div> <!--CareOne at Lexington-->
             </div>
         </main>
-            <div id = "footer" class = "bg-ctp-crust flex flex-col justify-center max-w-6xl w-full py-4 border-x border-ctp-mauve"> <!-- flex col in case further content is added -->
+            <div id = "footer" class = "flex flex-col justify-center max-w-6xl w-full py-4 border-x border-ctp-mauve"> <!-- flex col in case further content is added -->
                 <div class = "flex flex-row justify-center">
                     <h3 class = "text-ctp-subtext1 text-center my-auto text-xl">Connect with me! </h3>
                     <a href = "https://github.com/sacerd-OS"><i class="fa-brands fa-github text-ctp-subtext1 text-4xl px-5 transition-colors ease-in-out hover:text-ctp-overlay2 duration-700"></i></a>
